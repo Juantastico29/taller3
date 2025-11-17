@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Taller 3 - Flask{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="header">
+    <h1>Taller 3 - Programación Web </h1>
+</header>
+
+<nav class="menu">
+    <a href="{{ url_for('index') }}">Retorno</a>
+    <a href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+    <a href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+</nav>
+
+<main class="contenido">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <p>Desarrollado por: Juan Mendoza</p>
+</footer>
+</body>
+</html>

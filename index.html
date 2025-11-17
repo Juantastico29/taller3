@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="card menu-principal">
+    <h2>Menú Principal</h2>
+    <p>Selecciona uno de los ejercicios para continuar:</p>
+
+    <div class="links-menu">
+        <a class="btn" href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+        <a class="btn" href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+    </div>
+</section>
+{% endblock %}
+
